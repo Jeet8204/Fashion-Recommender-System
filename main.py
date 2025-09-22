@@ -5,10 +5,10 @@ os.environ['TF_XLA_FLAGS'] = '--tf_xla_enable_xla_devices=false'
 from PIL import Image
 import numpy as np
 import pickle
-from keras.preprocessing import image
-from keras.layers import GlobalMaxPooling2D
-from keras.applications.resnet50 import ResNet50, preprocess_input
-from keras.models import Sequential
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.layers import GlobalMaxPooling2D
+from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input
+from tensorflow.keras.models import Sequential
 from sklearn.neighbors import NearestNeighbors
 from numpy.linalg import norm
 from pathlib import Path
